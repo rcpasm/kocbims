@@ -1,0 +1,150 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/* Sayfanın içeriğini yukarıda tutacak */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer'ı sayfanın en altına sabitlemek için */
+footer {
+    margin-top: auto; /* İçeriğin altına itmek için */
+    background-color: #f1f1f1; /* Arka plan rengi */
+    text-align: center; /* Ortala */
+    padding: 20px; /* İçerik boşluğu */
+    position: relative; /* Diğer elementlerin üzerine gelmemesi için */
+}
+
+/* Başlık ve menü */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Ana sayfa stili */
+#home {
+    padding: 50px;
+    text-align: center;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ürünler Bölümü */
+#products {
+    padding: 20px;
+    text-align: left;
+}
+
+.product-item {
+    margin-bottom: 40px;
+}
+
+.product-item h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Hakkımızda Bölümü */
+#about-us {
+    padding: 20px;
+    text-align: left;
+}
+
+#about-us h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+#about-us ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: square;
+}
+
+#about-us ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Hakkımızda ve İletişim */
+#about, #contact {
+    padding: 50px;
+    background-color: #eaeaea;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

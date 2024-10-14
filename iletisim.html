@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOÇ YAPI - İletişim</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* İletişim Bölümü için Stil */
+        #contact {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        #map {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        #contact-form h3 {
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        #contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Başlık ve Menü -->
+    <header>
+        <h1>Koç Bims</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- İletişim İçeriği -->
+    <section id="contact">
+        <!-- Harita -->
+        <div id="map">
+            <h3>Bizimle İletişim Kurun</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.710570110994!2d33.61540819650396!3d40.57129112874581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c94b29bcde57af%3A0x5c69bb3a55d92c0f!2zQ2Fua2lyYSwgVHVya2l5ZSwgVHVya2VraGluLCBUdXJraXllcg!5e0!3m2!1str!2str!4v1612373907767!5m2!1str!2str" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div id="contact-form">
+            <h3>Hızlı İletişim Formu</h3>
+            <form action="mailto:info@bimsfabrikasi.com" method="post" enctype="text/plain">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- İletişim Bilgileri -->
+    <footer>
+        <p>&copy; 2024 Bims Fabrikası. Tüm hakları saklıdır.</p>
+        <p>Telefon: +90 123 456 7890</p>
+        <p>E-posta: info@bimsfabrikasi.com</p>
+        <p>Adres: Fabrika Adresiniz, Çankırı, Türkiye</p>
+        <p>
+            WhatsApp ile iletişime geç: 
+            <a href="https://wa.me/905313727171" target="_blank">WhatsApp ile Bağlan</a>
+        </p>
+    </footer>
+</body>
+</html>
